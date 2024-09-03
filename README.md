@@ -266,3 +266,98 @@ SyntaxError: invalid syntax. Perhaps you forgot a comma?
 >>> num
 [10, 12, 20, 34, 43]
 >>>
+#methos in python #
+"""
+>>> num = [10,20,30,40,50]
+>>> num = [10,20,30,40,50,45]
+>>> num.sort
+<built-in method sort of list object at 0x000001A5DD68D180>
+>>> num.sort()
+>>> num
+[10, 20, 30, 40, 45, 50]
+>>> num.append(25)
+>>> num
+[10, 20, 30, 40, 45, 50, 25]
+>>> num.insert(3,75)
+>>> num
+[10, 20, 30, 75, 40, 45, 50, 25]
+>>> num.remove(50)
+>>> num
+[10, 20, 30, 75, 40, 45, 25]
+>>> num.pop(3)
+75
+>>> num
+[10, 20, 30, 40, 45, 25]
+>>> num.del(2:)
+  File "<stdin>", line 1
+    num.del(2:)
+        ^^^
+SyntaxError: invalid syntax
+>>> num.del([2:])
+  File "<stdin>", line 1
+    num.del([2:])
+        ^^^
+SyntaxError: invalid syntax
+>>> del num(2:)
+  File "<stdin>", line 1
+    del num(2:)
+             ^
+SyntaxError: invalid syntax
+>>> del num[2:]
+>>> num
+[10, 20]
+>>> num.extend([12,35,34]0
+  File "<stdin>", line 1
+    num.extend([12,35,34]0
+               ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> num.extend([12,34,43])
+>>> num
+[10, 20, 12, 34, 43]
+>>> min(num)
+10
+>>> max(num)
+43
+>>> sum(num)
+119
+>>> num.sort()
+>>> num
+[10, 12, 20, 34, 43]
+>>>
+"""
+#tuple and set#
+"""
+>>>
+>>> tup = (10,20,30,40)
+>>> tup
+(10, 20, 30, 40)
+>>> tup[1]
+20
+>>> tup.insert[30]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'insert'
+>>> tup.count
+<built-in method count of tuple object at 0x000001A5DD999BC0>
+>>> tup
+(10, 20, 30, 40)
+>>> tup.index
+<built-in method index of tuple object at 0x000001A5DD999BC0>
+>>>
+>>>
+>>> s = {10,45,34,20,98}
+>>> s
+{34, 98, 20, 10, 45}
+>>> s
+{34, 98, 20, 10, 45}
+>>> s = {10,45,23,46,23}
+>>> s
+{10, 45, 46, 23}
+>>> s.add(20)
+>>> s
+{10, 45, 46, 20, 23}
+>>> s.remove(46)
+>>> s
+{10, 45, 20, 23}
+>>>
+"""
